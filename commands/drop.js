@@ -29,12 +29,10 @@ module.exports = {
         if (err) {
           msg.reply("There was a problem with the database");
         }
+        console.log(row.ModuleCode);
+        modules.push(row.ModuleCode);
       });
-      modules.push(row.ModuleCode);
     });
-
-    console.log(modules);
-    console.log(mods);
 
     for (i = 0; i < all_classes.length; i++) {
       cls = all_classes[i];
@@ -44,7 +42,7 @@ module.exports = {
         try {
           msg.member.removeRole(role);
         } catch (err) {
-          msg.author.send("You can not be removed from a class youre not in.");
+          msg.author.send("You can not be removed from a class you're not in.");
         }
         joined.push(cls);
       } else {
@@ -60,23 +58,6 @@ module.exports = {
         console.log("There was a problem closing the database");
       }
     });
-    // for (i = 0; i < all_classes.length; i++) {
-    //   cls = all_classes[i];
-    //   cls = cls.toUpperCase();
-    //   if (modules.includes(cls)) {
-    //     var role = msg.guild.roles.find((role) => role.name === cls);
-    //     try {
-    //       msg.member.removeRole(role);
-    //     } catch (err) {
-    //       msg.author.send("You can not be removed from a class youre not in.");
-    //     }
-    //     joined.push(cls);
-    //   } else {
-    //     msg.author.send(
-    //       cls + " does not exist or is restricted, so you were not enrolled :/"
-    //     );
-    //   }
-    //}
 
     msg.author.send("You have been removed from: " + joined);
     msg.delete();
