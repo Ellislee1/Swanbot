@@ -27,6 +27,10 @@ module.exports = {
             name: "!drop <args>",
             value: "Like !enrol but to drop modules.\n!drop CSCM45",
           },
+          {
+            name: "!xkcd",
+            value: "A comic for everything",
+          },
         ],
         timestamp: new Date(),
         footer: {
