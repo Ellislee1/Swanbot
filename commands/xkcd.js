@@ -11,11 +11,12 @@ module.exports = {
     white_list.forEach((item) => {
       console.log(msg.channel.name);
       console.log(item);
+      console.log(msg.channel.name == item);
       if (msg.channel.name == item) {
-        can_post == true;
+        can_post = true;
       }
     });
-    if (!can_post) {
+    if (can_post === false) {
       return;
     }
 
