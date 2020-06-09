@@ -30,7 +30,7 @@ module.exports = {
           msg.reply("There was a problem with the database");
         }
         console.log(row.ModuleCode);
-        modules.push(row.ModuleCode);
+        modules.push(row.ModuleCode.toString());
       });
     });
 
