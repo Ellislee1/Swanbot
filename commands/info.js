@@ -1,5 +1,5 @@
 require("discord.js");
-white_list = ["bot-info"];
+white_list2 = ["bot-info"];
 
 module.exports = {
   name: "info",
@@ -8,7 +8,7 @@ module.exports = {
     msg.delete();
 
     can_post = false;
-    white_list.forEach((item) => {
+    white_list2.forEach((item) => {
       console.log(msg.channel.name);
       console.log(item);
       console.log(msg.channel.name == item);
