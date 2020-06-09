@@ -23,6 +23,7 @@ module.exports = {
     comic = Math.floor(Math.random() * 2317);
     xkcd(comic, function (data) {
       console.log(data);
+      msg.delete();
       msg.channel.send(
         "Title: " + data.title + "\nalt: *" + data.alt + "*\n" + data.img
       );
