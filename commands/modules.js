@@ -33,7 +33,7 @@ module.exports = {
         author: {},
         title: "Module info",
         description:
-          "Please find below a list of all modules available. To join a single module use '!enrol <modules>' for example '!enrol CSC230,CSC345' would enrol you in modules 230 and 345... If they were available. ",
+          "Please find below a list of all modules available. To join a single module use '!enrol <modules>' for example '!enrol CSC230,CSC345' would enrol you in modules 230 and 345... If they were available. \nYou can also use !drop <modules> to leave those classes",
         fields: [
           {
             name: "Module Codes",
