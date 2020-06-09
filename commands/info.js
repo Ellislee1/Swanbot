@@ -11,7 +11,7 @@ module.exports = {
         title: "Swan Bot Info",
         url: "https://github.com/Ellislee1/Swanbot",
         description:
-          "Swanbot is an open source bot project for the MSc Computer Science Discord server.",
+          "Swanbot is an open source bot project for the MSc Computer Science Discord server. [Click me](https://github.com/Ellislee1/Swanbot) for the git repo!",
         fields: [
           {
             name: "Version",
