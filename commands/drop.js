@@ -53,7 +53,7 @@ module.exports = {
         console.log("There was a problem closing the database");
       }
     });
+
+    msg.delete();
   },
 };
-
-msg.delete();
