@@ -20,7 +20,7 @@ module.exports = {
           {
             name: "Commands",
             value:
-              "!info - Produces this message\n!ping - Will give the round trip latency of the bot\n!enrol <args> - Can only be used in the enrol channel and will add the module tag to you allowing you to get specific details on modules.\n!exams - Get info on exams (WIP!)",
+              "!info - Produces this message\n!ping - Will give the round trip latency of the bot\n!enrol <args> - Can only be used in the enrol channel and will add the module tag to you allowing you to get specific details on modules.",
           },
           {
             name: "Contributors",
