@@ -26,13 +26,12 @@ module.exports = {
 
     modules = [];
 
-    db.serialize(() => {
-      db.each(`SELECT ModuleCode FROM tblModules`, (err, row) => {
-        if (err) {
-          msg.reply("There was a problem with the database");
-        }
-        this_module_code = row.ModuleCode.toString();
-        modules.push(this_module_code);
+    db.all(`SELECT ModuleCode FROM tblModules`, (err, row) => {
+      if (err) {
+        msg.reply("There was a problem with the database");
+      }
+      rows.forEach((row) => {
+        modules.push(row);
       });
     });
 
