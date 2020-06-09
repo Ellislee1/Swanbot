@@ -24,13 +24,13 @@ module.exports = {
       }
     );
     modules = [];
-    mods = db.serialize(() => {
+    db.serialize(() => {
       db.each(`SELECT ModuleCode FROM tblModules`, (err, row) => {
         if (err) {
           msg.reply("There was a problem with the database");
         }
-        modules.push(row.ModuleCode);
       });
+      modules.push(row.ModuleCode);
     });
 
     console.log(modules);
