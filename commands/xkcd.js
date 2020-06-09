@@ -4,7 +4,7 @@ xkcd = require("xkcd");
 white_list = ["staff-general", "general", "memes"];
 
 module.exports = {
-  name: "help",
+  name: "xkcd",
   description: "Bot Details",
   execute(msg, args) {
     can_post = false;
