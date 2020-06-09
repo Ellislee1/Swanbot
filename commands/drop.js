@@ -24,15 +24,17 @@ module.exports = {
       }
     );
     modules = [];
-    db.serialize(() => {
+    mods = db.serialize(() => {
       db.each(`SELECT ModuleCode FROM tblModules`, (err, row) => {
         if (err) {
           msg.reply("There was a problem with the database");
-          console.log("There was a problem closing the database");
         }
         modules.push(row.ModuleCode);
       });
     });
+
+    console.log(modules);
+    console.log(mods);
 
     for (i = 0; i < all_classes.length; i++) {
       cls = all_classes[i];
@@ -47,7 +49,7 @@ module.exports = {
         joined.push(cls);
       } else {
         msg.author.send(
-          cls + " does not exist or is restricted, so you were not enrolled :/"
+          cls + " does not exist or is restricted, so you were not removed :/"
         );
       }
     }
