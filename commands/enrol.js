@@ -29,7 +29,7 @@ module.exports = {
   name: "enrol",
   description: "Enrol on a module through the server",
   execute(msg, args) {
-    if (msg.channel.name != "enroll") {
+    if (msg.channel.name != "module-enrol") {
       return;
     }
     args = msg.content.split(" ");
