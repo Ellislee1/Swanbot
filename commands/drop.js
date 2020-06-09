@@ -12,7 +12,6 @@ module.exports = {
     join_class = args[1];
     all_classes = join_class.replace(" ", "").split(",");
 
-    joined = [];
     let db = new sqlite3.Database(
       "./Swanbot.db",
       sqlite3.OPEN_READONLY,
@@ -24,10 +23,9 @@ module.exports = {
       }
     );
 
-    modules = [];
-
     db.serialize(() => {
       db.each(`SELECT ModuleCode FROM tblModules`, (err, row) => {
+        joined = [];
         if (err) {
           msg.reply("There was a problem with the database");
         }
@@ -44,6 +42,8 @@ module.exports = {
             );
           }
         }
+
+        msg.author.send("You have been removed from: " + joined);
       });
     });
 
@@ -53,8 +53,7 @@ module.exports = {
         console.log("There was a problem closing the database");
       }
     });
-
-    msg.author.send("You have been removed from: " + joined);
-    msg.delete();
   },
 };
+
+msg.delete();
