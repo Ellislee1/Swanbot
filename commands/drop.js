@@ -35,15 +35,13 @@ module.exports = {
           );
           try {
             msg.member.removeRole(role);
-            joined.push(cls);
+            msg.author.send("You have been removed from: " + row.ModuleCode);
           } catch (err) {
             msg.author.send(
               "You can not be removed from a class you're not in."
             );
           }
         }
-
-        msg.author.send("You have been removed from: " + joined);
       });
     });
 
