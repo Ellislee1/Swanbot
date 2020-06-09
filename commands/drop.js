@@ -26,34 +26,26 @@ module.exports = {
 
     modules = [];
 
-    db.all(`SELECT ModuleCode FROM tblModules`, (err, rows) => {
-      if (err) {
-        msg.reply("There was a problem with the database");
-      }
-      rows.forEach((row) => {
-        modules.push(row);
+    db.serialize(() => {
+      db.each(`SELECT ModuleCode FROM tblModules`, (err, row) => {
+        if (err) {
+          msg.reply("There was a problem with the database");
+        }
+        if (all_classes.includes(row.ModuleCode)) {
+          var role = msg.guild.roles.find(
+            (role) => role.name === row.ModuleCode
+          );
+          try {
+            msg.member.removeRole(role);
+            joined.push(cls);
+          } catch (err) {
+            msg.author.send(
+              "You can not be removed from a class you're not in."
+            );
+          }
+        }
       });
     });
-
-    console.log(modules);
-
-    for (i = 0; i < all_classes.length; i++) {
-      cls = all_classes[i];
-      cls = cls.toUpperCase();
-      if (modules.includes(cls)) {
-        var role = msg.guild.roles.find((role) => role.name === cls);
-        try {
-          msg.member.removeRole(role);
-        } catch (err) {
-          msg.author.send("You can not be removed from a class you're not in.");
-        }
-        joined.push(cls);
-      } else {
-        msg.author.send(
-          cls + " does not exist or is restricted, so you were not removed :/"
-        );
-      }
-    }
 
     db.close((err) => {
       if (err) {
