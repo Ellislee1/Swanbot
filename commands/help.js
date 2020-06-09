@@ -16,7 +16,7 @@ module.exports = {
           {
             name: "!help",
             value:
-              "This brings sends you a list of all command... This list to be exact.",
+              "This sends you a list of all command... This list to be exact.",
           },
           {
             name: "!enrol <args>",

@@ -1,10 +1,24 @@
 require("discord.js");
-
+white_list = ["bot-info"];
 module.exports = {
   name: "info",
   description: "Bot Details",
   execute(msg, args) {
     msg.delete();
+
+    can_post = false;
+    white_list.forEach((item) => {
+      console.log(msg.channel.name);
+      console.log(item);
+      console.log(msg.channel.name == item);
+      if (msg.channel.name == item) {
+        can_post = true;
+      }
+    });
+    if (can_post === false) {
+      return;
+    }
+
     msg.channel.send({
       embed: {
         color: 3447003,
@@ -16,7 +30,7 @@ module.exports = {
         fields: [
           {
             name: "Version",
-            value: "0.1a",
+            value: "0.1.2a",
           },
           {
             name: "Commands",
