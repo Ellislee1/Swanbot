@@ -26,7 +26,7 @@ module.exports = {
 
     modules = [];
 
-    db.all(`SELECT ModuleCode FROM tblModules`, (err, row) => {
+    db.all(`SELECT ModuleCode FROM tblModules`, (err, rows) => {
       if (err) {
         msg.reply("There was a problem with the database");
       }
