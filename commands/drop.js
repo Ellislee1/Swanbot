@@ -29,7 +29,7 @@ module.exports = {
   name: "drop",
   description: "Drop a module on the server",
   execute(msg, args) {
-    if (msg.channel.name != "enroll") {
+    if (msg.channel.name != "module-enrol") {
       return;
     }
     args = msg.content.split(" ");
