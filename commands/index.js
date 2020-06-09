@@ -4,4 +4,5 @@ module.exports = {
   Enroll: require("./enrol"),
   Version: require("./info"),
   Modules: require("./modules"),
+  Drop: require("./drop"),
 };

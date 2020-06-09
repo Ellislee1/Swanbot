@@ -26,8 +26,8 @@ var modules = [
 ];
 
 module.exports = {
-  name: "enrol",
-  description: "Enrol on a module through the server",
+  name: "drop",
+  description: "Drop a module on the server",
   execute(msg, args) {
     if (msg.channel.name != "enroll") {
       return;
@@ -39,11 +39,14 @@ module.exports = {
     joined = [];
     for (i = 0; i < all_classes.length; i++) {
       cls = all_classes[i];
-      console.log(cls);
       cls = cls.toUpperCase();
       if (modules.includes(cls)) {
         var role = msg.guild.roles.find((role) => role.name === cls);
-        msg.member.addRole(role);
+        try {
+          msg.member.removeRole(role);
+        } catch (err) {
+          msg.author.send("You can not be removed from a class youre not in.");
+        }
         joined.push(cls);
       } else {
         msg.author.send(
@@ -52,7 +55,7 @@ module.exports = {
       }
     }
 
-    msg.author.send("You have been enrolled in: " + joined);
+    msg.author.send("You have been removed from: " + joined);
     msg.delete();
   },
 };
