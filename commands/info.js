@@ -1,5 +1,6 @@
 require("discord.js");
 white_list = ["bot-info"];
+
 module.exports = {
   name: "info",
   description: "Bot Details",
