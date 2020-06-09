@@ -1,30 +1,5 @@
 require("discord.js");
 
-var modules = [
-  "CSP420",
-  "CSC409",
-  "CSC410",
-  "CSCM08",
-  "CSCM13",
-  "CSCM18",
-  "CSCM27",
-  "CSCM38",
-  "CSCM45",
-  "CSCM48",
-  "CSCM72",
-  "CSCM75",
-  "CSCM98",
-  "CSCM28",
-  "CSCM29",
-  "CSCM35",
-  "CSCM37",
-  "CSCM39",
-  "CSCM64",
-  "CSCM68",
-  "CSCM79",
-  "CSCM85",
-];
-
 module.exports = {
   name: "drop",
   description: "Drop a module on the server",
@@ -37,6 +12,27 @@ module.exports = {
     all_classes = join_class.replace(" ", "").split(",");
 
     joined = [];
+    let db = new sqlite3.Database(
+      "./Swanbot.db",
+      sqlite3.OPEN_READONLY,
+      (err) => {
+        if (err) {
+          msg.reply("Could not connect to database");
+          console.log("There was a problem opening the database");
+        }
+      }
+    );
+    modules = [];
+    db.serialize(() => {
+      db.each(`SELECT ModuleCode FROM tblModules`, (err, row) => {
+        if (err) {
+          msg.reply("There was a problem with the database");
+          console.log("There was a problem closing the database");
+        }
+        modules.push(row.ModuleCode);
+      });
+    });
+
     for (i = 0; i < all_classes.length; i++) {
       cls = all_classes[i];
       cls = cls.toUpperCase();
@@ -54,6 +50,30 @@ module.exports = {
         );
       }
     }
+
+    db.close((err) => {
+      if (err) {
+        msg.reply("There was a problem with the database");
+        console.log("There was a problem closing the database");
+      }
+    });
+    // for (i = 0; i < all_classes.length; i++) {
+    //   cls = all_classes[i];
+    //   cls = cls.toUpperCase();
+    //   if (modules.includes(cls)) {
+    //     var role = msg.guild.roles.find((role) => role.name === cls);
+    //     try {
+    //       msg.member.removeRole(role);
+    //     } catch (err) {
+    //       msg.author.send("You can not be removed from a class youre not in.");
+    //     }
+    //     joined.push(cls);
+    //   } else {
+    //     msg.author.send(
+    //       cls + " does not exist or is restricted, so you were not enrolled :/"
+    //     );
+    //   }
+    //}
 
     msg.author.send("You have been removed from: " + joined);
     msg.delete();
