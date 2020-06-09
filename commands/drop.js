@@ -23,16 +23,20 @@ module.exports = {
         }
       }
     );
+
     modules = [];
+
     db.serialize(() => {
       db.each(`SELECT ModuleCode FROM tblModules`, (err, row) => {
         if (err) {
           msg.reply("There was a problem with the database");
         }
-        console.log(row.ModuleCode);
-        modules.push(row.ModuleCode.toString());
+        this_module_code = row.ModuleCode.toString();
+        modules.push(this_module_code);
       });
     });
+
+    console.log(modules);
 
     for (i = 0; i < all_classes.length; i++) {
       cls = all_classes[i];
