@@ -7,10 +7,10 @@ module.exports = {
   name: "help",
   description: "Bot Details",
   execute(msg, args) {
-    can_post = False;
+    can_post = false;
     white_list.forEach((item) => {
       if (msg.channel.name == item) {
-        can_post == True;
+        can_post == true;
       }
     });
     if (!can_post) {
