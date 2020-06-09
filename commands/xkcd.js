@@ -1,7 +1,7 @@
 require("discord.js");
 xkcd = require("xkcd");
 
-white_list = [];
+white_list = ["staff-general", "general", "memes"];
 
 module.exports = {
   name: "help",
