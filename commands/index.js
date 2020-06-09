@@ -6,4 +6,5 @@ module.exports = {
   Modules: require("./modules"),
   Drop: require("./drop"),
   Help: require("./help"),
+  Xkcd: require("./xkcd"),
 };
