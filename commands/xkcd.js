@@ -5,10 +5,12 @@ white_list = ["staff-general", "general", "memes"];
 
 module.exports = {
   name: "xkcd",
-  description: "Bot Details",
+  description: "",
   execute(msg, args) {
     can_post = false;
     white_list.forEach((item) => {
+      console.log(msg.channel.name);
+      console.log(item);
       if (msg.channel.name == item) {
         can_post == true;
       }
