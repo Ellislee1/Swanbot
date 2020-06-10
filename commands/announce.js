@@ -1,3 +1,5 @@
+const { Channel } = require("discord.js");
+
 require("discord.js");
 all_channels = [
   // "general",
@@ -16,6 +18,8 @@ module.exports = {
     console.log("CHANNELS==========================\n" + channels);
     if (args[0].toUpperCase() == "ALL") {
       channels.forEach((channel) => {
+        console.log(channel);
+        console.log(channel.name);
         if (all_channels.includes(channel.name)) {
           send_message(channel, args[1], msg);
         }
