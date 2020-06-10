@@ -39,8 +39,8 @@ module.exports = {
 function test_channel(channels, chan) {
   console.log(chan);
   channels.forEach((channel) => {
-    console.log(channel.name);
-    if (chan == channel.name) {
+    console.log(channel.name.toString() == chan);
+    if (chan == channel.name.toString()) {
       return channel;
     }
   });
