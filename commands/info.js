@@ -9,9 +9,6 @@ module.exports = {
 
     can_post = false;
     white_list2.forEach((item) => {
-      console.log(msg.channel.name);
-      console.log(item);
-      console.log(msg.channel.name == item);
       if (msg.channel.name == item) {
         can_post = true;
       }

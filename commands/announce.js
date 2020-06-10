@@ -2,7 +2,7 @@ const { Channel } = require("discord.js");
 
 require("discord.js");
 all_channels = [
-  // "general",
+  "general",
   // "games-and-shit",
   // "memes",
   "staff-general",
@@ -17,23 +17,33 @@ module.exports = {
     const channels = msg.guild.channels;
     console.log("CHANNELS==========================\n" + channels);
     if (args[0].toUpperCase() == "ALL") {
-      channels.forEach((channel) => {
-        console.log(channel);
-        console.log(channel.name);
-        if (all_channels.includes(channel.name)) {
-          send_message(channel, args[1], msg);
+      all_channels.forEach((chan) => {
+        if (test_channel(channels, chan)) {
+          send_message(chan, args[1], msg);
         }
       });
     } else {
-      if (channels.includes(args[0])) {
-        send_message(args[0], args[1], msg);
-      }
+      chans = args[1].split(",");
+      chans.forEach((chan) => {
+        if (test_channel(channels, chan)) {
+          send_message(args[0], args[1], msg);
+        }
+      });
     }
   },
 };
 
+function test_channel(channels, chan) {
+  channels.forEach((channel) => {
+    if (chan == channel.name) {
+      return true;
+    }
+  });
+  return false;
+}
+
 function send_message(channel, message, msg) {
-  channel.send("@Owner", {
+  channel.send("@everyone", {
     embed: {
       color: 3447003,
       author: {

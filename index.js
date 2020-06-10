@@ -1,6 +1,6 @@
 require("dotenv").config();
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+const bot = new Discord.Client({ disableEveryone: False });
 bot.commands = new Discord.Collection();
 const botCommands = require("./commands");
 const TOKEN = process.env.TOKEN;
