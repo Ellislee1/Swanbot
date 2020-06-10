@@ -31,7 +31,7 @@ module.exports = {
 function send_message(channel, message, msg) {
   channel.send("@Owner", {
     embed: {
-      color: "#a86832",
+      color: 3447003,
       author: {
         name: msg.member.user.tag,
       },
