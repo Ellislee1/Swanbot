@@ -12,11 +12,11 @@ module.exports = {
   description: "Bot Details",
   execute(msg, args) {
     console.log("ARGS==========================\n" + args);
-    const channels = msg.guild.channels.name;
+    const channels = msg.guild.channels;
     console.log("CHANNELS==========================\n" + channels);
     if (args[0].toUpperCase() == "ALL") {
       channels.forEach((channel) => {
-        if (all_channels.includes(channel)) {
+        if (all_channels.includes(channel.name)) {
           send_message(channel, args[1], msg);
         }
       });
