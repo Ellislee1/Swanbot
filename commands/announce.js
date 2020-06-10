@@ -19,8 +19,8 @@ module.exports = {
     if (args[0].toUpperCase() == "ALL") {
       all_channels.forEach((chan) => {
         result = test_channel(channels, chan);
-        console.log(result);
         if (result != false) {
+          console.log(result);
           send_message(result, args[1], msg);
         }
       });
@@ -48,7 +48,8 @@ function test_channel(channels, chan) {
 }
 
 function send_message(channel, message, msg) {
-  channel.send("@everyone", {
+  console.log(channel);
+  btoa.channels.get(channel.id).send("@everyone", {
     embed: {
       color: 3447003,
       author: {
