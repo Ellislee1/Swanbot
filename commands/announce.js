@@ -41,7 +41,6 @@ function test_channel(channels, chan) {
   channels.forEach((channel) => {
     match = channel.name.toString() == chan;
     if (match) {
-      console.log(channel);
       return channel;
     }
   });
