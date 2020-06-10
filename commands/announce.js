@@ -11,9 +11,9 @@ module.exports = {
   name: "announce",
   description: "Bot Details",
   execute(msg, args) {
-    console.log(args);
+    console.log("ARGS==========================\n" + args);
     const channels = msg.guild.channels;
-    console.log(channels);
+    console.log("CHANNELS==========================\n" + channels);
     if (args[1].toUpperCase() == "ALL") {
       channels.forEach((channel) => {
         if (all_channels.included(channel)) {
