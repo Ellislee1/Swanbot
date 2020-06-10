@@ -16,12 +16,12 @@ module.exports = {
     console.log("CHANNELS==========================\n" + channels);
     if (args[0].toUpperCase() == "ALL") {
       channels.forEach((channel) => {
-        if (all_channels.included(channel)) {
+        if (all_channels.includes(channel)) {
           send_message(channel, args[1], msg);
         }
       });
     } else {
-      if (channels.included(args[0])) {
+      if (channels.includes(args[0])) {
         send_message(args[0], args[1], msg);
       }
     }
