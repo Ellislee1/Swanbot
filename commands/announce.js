@@ -18,15 +18,17 @@ module.exports = {
     console.log("CHANNELS==========================\n" + channels);
     if (args[0].toUpperCase() == "ALL") {
       all_channels.forEach((chan) => {
-        if (test_channel(channels, chan)) {
-          send_message(chan, args[1], msg);
+        result = test_channel(channels, chan);
+        if (result != false) {
+          send_message(result, args[1], msg);
         }
       });
     } else {
       chans = args[1].split(",");
       chans.forEach((chan) => {
-        if (test_channel(channels, chan)) {
-          send_message(args[0], args[1], msg);
+        result = test_channel(channels, chan);
+        if (result != false) {
+          send_message(result, args[1], msg);
         }
       });
     }
@@ -38,7 +40,7 @@ function test_channel(channels, chan) {
   channels.forEach((channel) => {
     console.log(channel.name);
     if (chan == channel.name) {
-      return true;
+      return channel;
     }
   });
   return false;
