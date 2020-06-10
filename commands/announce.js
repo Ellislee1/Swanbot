@@ -19,7 +19,7 @@ module.exports = {
     if (args[0].toUpperCase() == "ALL") {
       all_channels.forEach((chan) => {
         result = test_channel(channels, chan);
-        onsole.log(result);
+        console.log(result);
         if (result != false) {
           console.log("here");
           send_message(result, args[1], msg);
