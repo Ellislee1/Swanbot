@@ -28,7 +28,7 @@ module.exports = {
             embed: {
               color: 3447003,
               title: "Announcement!",
-              description: args[1],
+              description: message,
               timestamp: new Date(),
               footer: {
                 text: "- " + msg.member.user.tag,
@@ -43,7 +43,7 @@ module.exports = {
             embed: {
               color: 3447003,
               title: "Announcement!",
-              description: args[1],
+              description: message,
               timestamp: new Date(),
               footer: {
                 text: "- " + msg.member.user.tag,
