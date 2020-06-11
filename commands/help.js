@@ -28,6 +28,11 @@ module.exports = {
             value: "Like !enrol but to drop modules.\n!drop CSCM45",
           },
           {
+            name: "!announce <channel> <message>",
+            value:
+              "Use to make announcements, keep it channel specific to avoid notifications being recieved unnecessarily\n!announce general This is a test message.",
+          },
+          {
             name: "!xkcd",
             value: "A comic for everything",
           },
