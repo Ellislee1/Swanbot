@@ -19,7 +19,7 @@ module.exports = {
     channels.forEach((channel) => {
       channel_name = channel.name;
       if (all_channels.includes(channel_name)) {
-        channel.send("@everyone", {
+        channel.send("@here", {
           embed: {
             color: 3447003,
             title: "Announcement!",
