@@ -23,7 +23,7 @@ module.exports = {
           embed: {
             color: 3447003,
             author: {
-              name: message.member.user.tag,
+              name: msg.member.user.tag,
             },
             title: "Announcement!",
             description: args[1],
