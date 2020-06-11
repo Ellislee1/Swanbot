@@ -19,7 +19,20 @@ module.exports = {
     channels.forEach((channel) => {
       channel_name = channel.name;
       if (all_channels.includes(channel_name)) {
-        channel.send("@everyone " + args[1]);
+        channel.send("@everyone", {
+          embed: {
+            color: 3447003,
+            author: {
+              name: message.member.user.tag,
+            },
+            title: "Announcement!",
+            description: args[1],
+            timestamp: new Date(),
+            footer: {
+              text: "- Swanbot",
+            },
+          },
+        });
       }
     });
   },
