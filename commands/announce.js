@@ -18,18 +18,35 @@ module.exports = {
     console.log("CHANNELS==========================\n" + channels);
     channels.forEach((channel) => {
       channel_name = channel.name;
-      if (all_channels.includes(channel_name)) {
-        channel.send("@here", {
-          embed: {
-            color: 3447003,
-            title: "Announcement!",
-            description: args[1],
-            timestamp: new Date(),
-            footer: {
-              text: "- " + msg.member.user.tag,
+      if (args[0].toUpperCase() == "ALL") {
+        if (all_channels.includes(channel_name)) {
+          channel.send("@everyone", {
+            embed: {
+              color: 3447003,
+              title: "Announcement!",
+              description: args[1],
+              timestamp: new Date(),
+              footer: {
+                text: "- " + msg.member.user.tag,
+              },
             },
-          },
-        });
+          });
+        }
+      } else {
+        arg_channels = args[0].split(",");
+        if (arg_channels.includes(channel_name)) {
+          channel.send("@everyone", {
+            embed: {
+              color: 3447003,
+              title: "Announcement!",
+              description: args[1],
+              timestamp: new Date(),
+              footer: {
+                text: "- " + msg.member.user.tag,
+              },
+            },
+          });
+        }
       }
     });
   },
