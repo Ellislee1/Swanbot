@@ -3,10 +3,10 @@ const { Channel } = require("discord.js");
 require("discord.js");
 all_channels = [
   "general",
-  // "games-and-shit",
-  // "memes",
+  "games-and-shit",
+  "memes",
   "staff-general",
-  // "housing",
+  "housing",
 ];
 
 module.exports = {
