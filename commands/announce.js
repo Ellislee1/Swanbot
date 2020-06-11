@@ -22,14 +22,11 @@ module.exports = {
         channel.send("@everyone", {
           embed: {
             color: 3447003,
-            author: {
-              name: msg.member.user.tag,
-            },
             title: "Announcement!",
             description: args[1],
             timestamp: new Date(),
             footer: {
-              text: "- Swanbot",
+              text: "- " + msg.member.user.tag,
             },
           },
         });
