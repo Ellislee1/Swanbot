@@ -23,7 +23,7 @@ module.exports = {
         author: {},
         title: "Rules",
         description:
-          "While this server is not in anyway afiliated with the university, nor does the university control any aspect of the server. However everyone in the server is to follow the rules laidout below in addition to the universities. [Info on the Swansea University Poliies and Procedures](https://www.swansea.ac.uk/about-us/compliance/freedom-of-information-/publication-scheme/our-policies-and-procedures/)\n[Academic Misconduct infomation](https://myuni.swansea.ac.uk/academic-life/academic-misconduct/)",
+          "While this server is not in anyway afiliated with the university, nor does the university control any aspect of the server. However everyone in the server is to follow the rules laidout below in addition to the universities. [Info on the Swansea University Policies and Procedures](https://www.swansea.ac.uk/about-us/compliance/freedom-of-information-/publication-scheme/our-policies-and-procedures/)\n[Academic Misconduct infomation](https://myuni.swansea.ac.uk/academic-life/academic-misconduct/)",
         fields: [
           {
             name: "Self Policing",
