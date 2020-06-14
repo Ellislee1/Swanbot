@@ -7,4 +7,5 @@ module.exports = {
   Help: require("./help"),
   Xkcd: require("./xkcd"),
   announce: require("./announce"),
+  announce: require("./rules"),
 };
