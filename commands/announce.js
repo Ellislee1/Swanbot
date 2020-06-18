@@ -10,9 +10,10 @@ all_channels = [
 ];
 
 module.exports = {
-  name: "announce",
+  name: "ann",
   description: "Bot Details",
   execute(msg, args) {
+    console;
     console.log("ARGS==========================\n" + args);
     const channels = msg.guild.channels;
     console.log("CHANNELS==========================\n" + channels);
