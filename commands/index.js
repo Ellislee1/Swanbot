@@ -5,4 +5,5 @@ module.exports = {
   Test: require("./Study/test"),
   Announce: require("./generic/announce"),
   Feature: require("./generic/feature"),
+  Channels: require("./staff/channels"),
 };
