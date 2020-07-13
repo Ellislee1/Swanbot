@@ -15,6 +15,7 @@ module.exports = {
         color: "#8332a8",
         title: "Info",
         description: `Hi! I'm Swanbot 2.0. I'm a custom bot made by a student for the Compsci/Software Eng MSc/MEng Discord.`,
+        URL: "https://github.com/Ellislee1/Swanbot",
         fields: [
           {
             name: "Version",
@@ -23,6 +24,10 @@ module.exports = {
           {
             name: "Authors",
             value: "Ellis Thompson",
+          },
+          {
+            name: "Repo",
+            value: "https://github.com/Ellislee1/Swanbot",
           },
         ],
         timestamp: new Date(),
