@@ -1,11 +1,8 @@
 module.exports = {
-  Ping: require("./ping"),
-  Enroll: require("./enrol"),
-  Version: require("./info"),
-  Modules: require("./modules"),
-  Drop: require("./drop"),
-  Help: require("./help"),
-  Xkcd: require("./xkcd"),
-  announce: require("./rules"),
-  announce: require("./announce"),
+  Help: require("./generic/help"),
+  Ping: require("./generic/ping"),
+  Question: require("./Study/question"),
+  Test: require("./Study/test"),
+  Announce: require("./generic/announce"),
+  Feature: require("./generic/feature"),
 };
