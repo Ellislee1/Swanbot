@@ -6,7 +6,7 @@ module.exports = {
   name: "enrol",
   description: "enrol onto module(s)",
   execute(msg, args) {
-    if (msg.channel.name != "module-enro") {
+    if (msg.channel.name != "module-enrol") {
       msg.reply("Please do that in the Module-Enrol channel.");
       msg.delete();
       return;
