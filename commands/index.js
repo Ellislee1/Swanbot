@@ -6,4 +6,5 @@ module.exports = {
   Announce: require("./generic/announce"),
   Feature: require("./generic/feature"),
   Channels: require("./staff/channels"),
+  Enrol: require("./generic/enrol"),
 };
