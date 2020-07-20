@@ -19,7 +19,7 @@ module.exports = {
         fields: [
           {
             name: "Version",
-            value: VERSION,
+            value: "0.0.5:21",
           },
           {
             name: "Authors",
@@ -69,6 +69,11 @@ module.exports = {
             name: "!feature",
             value:
               "Use `!feature <feature suggestion>` to suggest a feature to add to the bot.\nExample `!feature Construct additional pylons!`",
+          },
+          {
+            name: "!enrol",
+            value:
+              "Use `!enrol <module code 1> <module code 2>...` to gain access to module channels.\nExample `!enrol CSCM45 CSCM37 CSCM13`",
           },
         ],
         timestamp: new Date(),
