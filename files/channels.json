@@ -1,18 +1,6 @@
 {
   "modules": [
     {
-      "code": "CSCM29",
-      "title": "Blockchain Cryptocurrencies and Smart Contracts",
-      "channel": "cscm29-blockchain",
-      "type": "text"
-    },
-    {
-      "code": "CSCM37",
-      "title": "Data Visualization",
-      "channel": "csc37-data-vis",
-      "type": "text"
-    },
-    {
       "code": "CSC410",
       "title": "MSci Computer Science Project Research Methods",
       "channel": "csc410-research-methods",
@@ -123,7 +111,7 @@
     {
       "code": "CSCM64",
       "title": "Software Testing",
-      "channel": "cscm39-software-testing",
+      "channel": "cscm64-software-testing",
       "type": "text"
     },
     {

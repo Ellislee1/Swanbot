@@ -28,7 +28,9 @@ module.exports = {
       }
     });
     msg.author.send("You have been enrolled in " + joined);
-    msg.author.send("Failed to enroll in " + failed);
+    if (failed.length >= 1) {
+      msg.author.send("Failed to enroll in " + failed);
+    }
     msg.delete();
   },
 };
