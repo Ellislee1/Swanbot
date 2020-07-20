@@ -2,11 +2,147 @@
   "modules": [
     {
       "code": "CSCM29",
-      "title": "Blockchain Cryptocurrencies and Smart Contracts"
+      "title": "Blockchain Cryptocurrencies and Smart Contracts",
+      "channel": "cscm29-blockchain",
+      "type": "text"
     },
     {
       "code": "CSCM37",
-      "title": "Data Visualization"
+      "title": "Data Visualization",
+      "channel": "csc37-data-vis",
+      "type": "text"
+    },
+    {
+      "code": "CSC410",
+      "title": "MSci Computer Science Project Research Methods",
+      "channel": "csc410-research-methods",
+      "type": "text"
+    },
+    {
+      "code": "CSP420",
+      "title": "MSci Computer Science Project",
+      "channel": "csp420-cs-project",
+      "type": "text"
+    },
+    {
+      "code": "CSCM13",
+      "title": "Critical Systems",
+      "channel": "cscm13-critical-systems",
+      "type": "text"
+    },
+    {
+      "code": "CSCM18",
+      "title": "IT-Security: Cryptography and Network Security",
+      "channel": "cscm18-cryptography",
+      "type": "text"
+    },
+    {
+      "code": "CSCM27",
+      "title": "Human-Centred Visual Analytics",
+      "channel": "cscm27-visual-analytics",
+      "type": "text"
+    },
+    {
+      "code": "CSCM38",
+      "title": "Advanced Topics: Artificial Intelligence and Cyber Security",
+      "channel": "cscm38-ai-and-cyber-security",
+      "type": "text"
+    },
+    {
+      "code": "CSCM45",
+      "title": "Big Data and Machine Learning",
+      "channel": "cscm45-big-data-and-machine-learning",
+      "type": "text"
+    },
+    {
+      "code": "CSCM48",
+      "title": "Web Application Development",
+      "channel": "cscm48-web-app",
+      "type": "text"
+    },
+    {
+      "code": "CSCM72",
+      "title": "Optimisation",
+      "channel": "cscm72-optimisation",
+      "type": "text"
+    },
+    {
+      "code": "CSCM75",
+      "title": "Logic in Computer Science",
+      "channel": "cscm75-logic-in-computer-science",
+      "type": "text"
+    },
+    {
+      "code": "CSCM98",
+      "title": "Operating Systems and Architectures",
+      "channel": "cscm98-os-and-architectures",
+      "type": "text"
+    },
+    {
+      "code": "CSC409",
+      "title": "Invention and Innovation in Computing",
+      "channel": "csc409-invention-and-innovation",
+      "type": "text"
+    },
+    {
+      "code": "CSCM08",
+      "title": "Information Security Management",
+      "channel": "cscm08-information-security-management",
+      "type": "text"
+    },
+    {
+      "code": "CSCM28",
+      "title": "Security Vulnerabilities and Penetration Testing",
+      "channel": "cscm28-security-vulnerabilities-and-penetration-testing",
+      "type": "text"
+    },
+    {
+      "code": "CSCM29",
+      "title": "Blockchain, Cryptocurrencies and Smart Contracts",
+      "channel": "cscm29-blockchain-cryptocurrencies-and-smart-contracts",
+      "type": "text"
+    },
+    {
+      "code": "CSCM35",
+      "title": "Big Data and Data Mining",
+      "channel": "cscm35-big-data-and-data-mining",
+      "type": "text"
+    },
+    {
+      "code": "CSCM37",
+      "title": "Data Visualization",
+      "channel": "cscm37-data-vis",
+      "type": "text"
+    },
+    {
+      "code": "CSCM39",
+      "title": "Human Computer Interaction",
+      "channel": "cscm39-hci",
+      "type": "text"
+    },
+    {
+      "code": "CSCM64",
+      "title": "Software Testing",
+      "channel": "cscm39-software-testing",
+      "type": "text"
+    },
+    {
+      "code": "CSCM68",
+      "title": "Embedded System Design",
+      "channel": "cscm68-embedded-system-design",
+      "type": "text"
+    },
+    {
+      "code": "CSCM79",
+      "title": "Hardware and Devices",
+      "channel": "cscm79-hardware-and-devices",
+      "type": "text"
+    },
+    {
+      "code": "CSCM85",
+      "title": "Modelling and Verification Techniques",
+      "channel": "cscm85-modelling-and-verification-techniques",
+      "type": "text"
     }
   ]
 }
