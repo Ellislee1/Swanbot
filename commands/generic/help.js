@@ -112,6 +112,11 @@ module.exports = {
               value:
                 "Use `!feature <feature suggestion>` to suggest a feature to add to the bot.\nExample `!feature Construct additional pylons!`",
             },
+            {
+              name: "!enrol",
+              value:
+                "Use `!enrol <module code 1> <module code 2>...` to gain access to module channels.\nExample `!enrol CSCM45 CSCM37 CSCM13`",
+            },
           ],
           timestamp: new Date(),
           footer: { text: "- Swanbot 2.0 ❤️" },

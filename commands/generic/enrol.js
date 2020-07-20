@@ -12,19 +12,16 @@ module.exports = {
       return;
     }
 
-    args = msg.content.split;
-
     let data = loadFile();
     let modules = getModules(data);
-    let user = msg.member;
     joined = [];
     failed = [];
-
+    console.log(args);
     args.forEach((module) => {
       temp = module.toUpperCase();
       if (modules.includes(temp)) {
-        role = msg.guild.roles.find((role) => role.name === temp);
-        user.addRole(role);
+        role = msg.guild.roles.cache.find((role) => role.name === temp);
+        msg.member.roles.add(role);
         joined.push(temp);
       } else {
         failed.push(temp);
@@ -32,6 +29,7 @@ module.exports = {
     });
     msg.author.send("You have been enrolled in " + joined);
     msg.author.send("Failed to enroll in " + failed);
+    msg.delete();
   },
 };
 
@@ -43,7 +41,7 @@ function loadFile() {
 
 function getModules(data) {
   all_modules = [];
-  data.each((module) => {
+  data.forEach((module) => {
     all_modules.push(module.code);
   });
   return all_modules;

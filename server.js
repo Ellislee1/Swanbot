@@ -15,7 +15,6 @@ bot.on("ready", () => {
   console.info(`Logged in as ${bot.user.tag}!`);
 });
 
-// Message handling
 bot.on("message", (msg) => {
   const args = msg.content.split(" ");
   if (args[0].charAt(0) != "!") {
