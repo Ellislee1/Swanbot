@@ -27,7 +27,9 @@ module.exports = {
         failed.push(temp);
       }
     });
-    msg.author.send("You have been enrolled in " + joined);
+    if (joined.length >= 1) {
+      msg.author.send("You have been enrolled in " + joined);
+    }
     if (failed.length >= 1) {
       msg.author.send("Failed to enroll in " + failed);
     }
