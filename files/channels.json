@@ -4,133 +4,169 @@
       "code": "CSC410",
       "title": "MSci Computer Science Project Research Methods",
       "channel": "csc410-research-methods",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc"]
     },
     {
       "code": "CSP420",
       "title": "MSci Computer Science Project",
       "channel": "csp420-cs-project",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc"]
     },
     {
       "code": "CSCM13",
       "title": "Critical Systems",
       "channel": "cscm13-critical-systems",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM18",
       "title": "IT-Security: Cryptography and Network Security",
       "channel": "cscm18-cryptography",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM27",
       "title": "Human-Centred Visual Analytics",
       "channel": "cscm27-visual-analytics",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM38",
       "title": "Advanced Topics: Artificial Intelligence and Cyber Security",
       "channel": "cscm38-ai-and-cyber-security",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM45",
       "title": "Big Data and Machine Learning",
       "channel": "cscm45-big-data-and-machine-learning",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM48",
       "title": "Web Application Development",
       "channel": "cscm48-web-app",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM72",
       "title": "Optimisation",
       "channel": "cscm72-optimisation",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM75",
       "title": "Logic in Computer Science",
       "channel": "cscm75-logic-in-computer-science",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM98",
       "title": "Operating Systems and Architectures",
       "channel": "cscm98-os-and-architectures",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSC409",
       "title": "Invention and Innovation in Computing",
       "channel": "csc409-invention-and-innovation",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc"]
     },
     {
       "code": "CSCM08",
       "title": "Information Security Management",
       "channel": "cscm08-information-security-management",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM28",
       "title": "Security Vulnerabilities and Penetration Testing",
       "channel": "cscm28-security-vulnerabilities-and-penetration-testing",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM29",
       "title": "Blockchain, Cryptocurrencies and Smart Contracts",
       "channel": "cscm29-blockchain-cryptocurrencies-and-smart-contracts",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM35",
       "title": "Big Data and Data Mining",
       "channel": "cscm35-big-data-and-data-mining",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM37",
       "title": "Data Visualization",
       "channel": "cscm37-data-vis",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM39",
       "title": "Human Computer Interaction",
       "channel": "cscm39-hci",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM64",
       "title": "Software Testing",
       "channel": "cscm64-software-testing",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM68",
       "title": "Embedded System Design",
       "channel": "cscm68-embedded-system-design",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM79",
       "title": "Hardware and Devices",
       "channel": "cscm79-hardware-and-devices",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
     },
     {
       "code": "CSCM85",
       "title": "Modelling and Verification Techniques",
       "channel": "cscm85-modelling-and-verification-techniques",
-      "type": "text"
+      "type": "text",
+      "class": ["Int-MSc", "ACS-MSc"]
+    },
+    {
+      "code": "CSCM10",
+      "title": "Computer Science Project Research Methods",
+      "channel": "cscm10-research-methods",
+      "type": "text",
+      "class": ["ACS-MSc"]
+    },
+    {
+      "code": "CSCM88",
+      "title": "Network and Wireless Security",
+      "channel": "cscm88-Network and Wireless Security",
+      "type": "text",
+      "class": ["ACS-MSc"]
     }
   ]
 }
