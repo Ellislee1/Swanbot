@@ -19,7 +19,7 @@ module.exports = {
         fields: [
           {
             name: "Version",
-            value: "0.0.5:21",
+            value: "0.0.6:53",
           },
           {
             name: "Authors",
