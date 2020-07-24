@@ -19,49 +19,49 @@
       "title": "Critical Systems",
       "channel": "cscm13-critical-systems",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc", "CS-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM18",
       "title": "IT-Security: Cryptography and Network Security",
       "channel": "cscm18-cryptography",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM27",
       "title": "Human-Centred Visual Analytics",
       "channel": "cscm27-visual-analytics",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM38",
       "title": "Advanced Topics: Artificial Intelligence and Cyber Security",
       "channel": "cscm38-ai-and-cyber-security",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM45",
       "title": "Big Data and Machine Learning",
       "channel": "cscm45-big-data-and-machine-learning",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM48",
       "title": "Web Application Development",
       "channel": "cscm48-web-app",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CS-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM72",
       "title": "Optimisation",
       "channel": "cscm72-optimisation",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CS-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM75",
@@ -75,56 +75,56 @@
       "title": "Operating Systems and Architectures",
       "channel": "cscm98-os-and-architectures",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CS-MSc", "DS-MSc"]
     },
     {
       "code": "CSC409",
       "title": "Invention and Innovation in Computing",
       "channel": "csc409-invention-and-innovation",
       "type": "text",
-      "class": ["Int-MSc"]
+      "class": ["Int-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM08",
       "title": "Information Security Management",
       "channel": "cscm08-information-security-management",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM28",
       "title": "Security Vulnerabilities and Penetration Testing",
       "channel": "cscm28-security-vulnerabilities-and-penetration-testing",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM29",
       "title": "Blockchain, Cryptocurrencies and Smart Contracts",
       "channel": "cscm29-blockchain-cryptocurrencies-and-smart-contracts",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "BDAI-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM35",
       "title": "Big Data and Data Mining",
       "channel": "cscm35-big-data-and-data-mining",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM37",
       "title": "Data Visualization",
       "channel": "cscm37-data-vis",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CS-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM39",
       "title": "Human Computer Interaction",
       "channel": "cscm39-hci",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CS-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM64",
@@ -138,7 +138,7 @@
       "title": "Embedded System Design",
       "channel": "cscm68-embedded-system-design",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CS-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM79",
@@ -152,28 +152,28 @@
       "title": "Modelling and Verification Techniques",
       "channel": "cscm85-modelling-and-verification-techniques",
       "type": "text",
-      "class": ["Int-MSc", "ACS-MSc", "CS-MSc"]
+      "class": ["Int-MSc", "ACS-MSc", "CS-MSc", "CBY-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM10",
       "title": "Computer Science Project Research Methods",
       "channel": "cscm10-research-methods",
       "type": "text",
-      "class": ["ACS-MSc", "CS-MSc"]
+      "class": ["ACS-MSc", "CS-MSc", "CBY-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM88",
       "title": "Network and Wireless Security",
       "channel": "cscm88-network-and-wireless-security",
       "type": "text",
-      "class": ["ACS-MSc"]
+      "class": ["ACS-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM20",
       "title": "Network and Wireless Security",
       "channel": "cscm20-msc-project",
       "type": "text",
-      "class": ["ACS-MSc"]
+      "class": ["ACS-MSc", "CBY-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM69",
@@ -187,14 +187,14 @@
       "title": "Abuses, Biases and Blessings of Data",
       "channel": "cscm21-abuses-biases-and-blessings-of-data",
       "type": "text",
-      "class": ["BDAI-MSc"]
+      "class": ["BDAI-MSc", "DS-MSc"]
     },
     {
       "code": "CSCM23",
       "title": "Designing-in Trust, Understanding and Negotiation",
       "channel": "cscm23-designing-in-trust-understanding-and-negotiation",
       "type": "text",
-      "class": ["BDAI-MSc"]
+      "class": ["BDAI-MSc", "CBY-MSc"]
     },
     {
       "code": "CSCM77",
@@ -215,7 +215,7 @@
       "title": "Mathematical Skills for Data Scientists",
       "channel": "cscm70-mathematical-skills-for-data-scientists",
       "type": "text",
-      "class": ["BDAI-MSc"]
+      "class": ["BDAI-MSc", "DS-MSc"]
     },
     {
       "code": "LAAM19",
