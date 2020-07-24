@@ -7,4 +7,5 @@ module.exports = {
   Feature: require("./generic/feature"),
   Channels: require("./staff/channels"),
   Enrol: require("./generic/enrol"),
+  Modules: require("./generic/modules"),
 };

@@ -71,6 +71,11 @@ module.exports = {
               "Use `!feature <feature suggestion>` to suggest a feature to add to the bot.\nExample `!feature Construct additional pylons!`",
           },
           {
+            name: "!mods",
+            value:
+              "Use `!mods <Course Code>` to see modules available to a specific Master Course.\nExample `!mods Int-MSc`\nCourses:\nInt-MSc: Integrated Masters\nAcs-MSc: Advanced Computer Science, MSc\nDS-MSc: Data Science, MSc\nCBY-MSc: Cyber Security, MSc\nCS-MSc: Computer Science, MSc\nBDAI-MSc: Human-Centred Big Data and Artificial Intelligence, MSc",
+          },
+          {
             name: "!enrol",
             value:
               "Use `!enrol <module code 1> <module code 2>...` to gain access to module channels.\nExample `!enrol CSCM45 CSCM37 CSCM13`",
@@ -86,7 +91,7 @@ module.exports = {
         embed: {
           color: "#8332a8",
           title: "Help",
-          description: `Hi! I'm Swanbot 2.0. I'm a custom bot made by a student for the Compsci/Software Eng MSc/MEng Discord. Please find below a list of my commands 😊`,
+          description: `Hi! I'm Swanbot 2.0. I'm a custom bot made by a student for the Compsci/Software Eng MSc/MEng Discord. Please find below a list of my commands :smile:`,
           fields: [
             {
               name: "!help",
@@ -110,12 +115,17 @@ module.exports = {
             {
               name: "!ann",
               value:
-                "Use `!ann <[channels]> <message>` to make an accouncement in specified channels. For the channels you can:\n* Use an array `[channel1,channel2,channel3]` to specify channels.\n* Use `all` to use all predefined channels.\nExample: `!ann general,memes Still waiting for module selection to become available :confused:`",
+                "Use `!ann <[channels]> <message>` to make an accouncement in specified channels. For the channels you can:\n* Use an array `[channel1,channel2,channel3]` to specify channels.\n* Use `all` to use all predefined channels.\nExample: `!ann general,memes Still waiting for module selection to become available 😕`",
             },
             {
               name: "!feature",
               value:
                 "Use `!feature <feature suggestion>` to suggest a feature to add to the bot.\nExample `!feature Construct additional pylons!`",
+            },
+            {
+              name: "!mods",
+              value:
+                "Use `!mods <Course Code>` to see modules available to a specific Master Course.\nExample `!mods Int-MSc`\nCourses:\nInt-MSc: Integrated Masters\nAcs-MSc: Advanced Computer Science, MSc\nDS-MSc: Data Science, MSc\nCBY-MSc: Cyber Security, MSc\nCS-MSc: Computer Science, MSc\nBDAI-MSc: Human-Centred Big Data and Artificial Intelligence, MSc",
             },
             {
               name: "!enrol",
