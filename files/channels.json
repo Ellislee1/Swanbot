@@ -19,7 +19,7 @@
       "title": "Critical Systems",
       "channel": "cscm13-critical-systems",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "BDAI-MSC", "CS-MSc", "CBY-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "BDAI-MSC", "CS-MSC", "CBY-MSC"]
     },
     {
       "code": "CSCM18",
@@ -54,28 +54,28 @@
       "title": "Web Application Development",
       "channel": "cscm48-web-app",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc", "CBY-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC", "CBY-MSC"]
     },
     {
       "code": "CSCM72",
       "title": "Optimisation",
       "channel": "cscm72-optimisation",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc", "DS-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC", "DS-MSC"]
     },
     {
       "code": "CSCM75",
       "title": "Logic in Computer Science",
       "channel": "cscm75-logic-in-computer-science",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC"]
     },
     {
       "code": "CSCM98",
       "title": "Operating Systems and Architectures",
       "channel": "cscm98-os-and-architectures",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc", "DS-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC", "DS-MSC"]
     },
     {
       "code": "CSC409",
@@ -117,49 +117,49 @@
       "title": "Data Visualization",
       "channel": "cscm37-data-vis",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc", "DS-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC", "DS-MSC"]
     },
     {
       "code": "CSCM39",
       "title": "Human Computer Interaction",
       "channel": "cscm39-hci",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc", "DS-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC", "DS-MSC"]
     },
     {
       "code": "CSCM64",
       "title": "Software Testing",
       "channel": "cscm64-software-testing",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC"]
     },
     {
       "code": "CSCM68",
       "title": "Embedded System Design",
       "channel": "cscm68-embedded-system-design",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc", "CBY-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC", "CBY-MSC"]
     },
     {
       "code": "CSCM79",
       "title": "Hardware and Devices",
       "channel": "cscm79-hardware-and-devices",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "BDAI-MSC", "CS-MSc"]
+      "class": ["INT-MSC", "ACS-MSC", "BDAI-MSC", "CS-MSC"]
     },
     {
       "code": "CSCM85",
       "title": "Modelling and Verification Techniques",
       "channel": "cscm85-modelling-and-verification-techniques",
       "type": "text",
-      "class": ["INT-MSC", "ACS-MSC", "CS-MSc", "CBY-MSC", "DS-MSC"]
+      "class": ["INT-MSC", "ACS-MSC", "CS-MSC", "CBY-MSC", "DS-MSC"]
     },
     {
       "code": "CSCM10",
       "title": "Computer Science Project Research Methods",
       "channel": "cscm10-research-methods",
       "type": "text",
-      "class": ["ACS-MSC", "CS-MSc", "CBY-MSC", "DS-MSC"]
+      "class": ["ACS-MSC", "CS-MSC", "CBY-MSC", "DS-MSC"]
     },
     {
       "code": "CSCM88",
@@ -320,42 +320,42 @@
       "title": "Introducton to Programming in Java",
       "channel": "cscm41-introducton-to-programming-in-java",
       "type": "text",
-      "class": ["CS-MSc"]
+      "class": ["CS-MSC"]
     },
     {
       "code": "CSCM53",
       "title": "Computer System Concepts",
       "channel": "cscm53-computer-system-concepts",
       "type": "text",
-      "class": ["CS-MSc"]
+      "class": ["CS-MSC"]
     },
     {
       "code": "CSCM59",
       "title": "Relational and Object-Oriented Database Systems",
       "channel": "cscm59-relational-and-oo-database-systems",
       "type": "text",
-      "class": ["CS-MSc"]
+      "class": ["CS-MSC"]
     },
     {
       "code": "CSCM94",
       "title": "Software Engineering Principles",
       "channel": "cscm94-software-engineering-principles",
       "type": "text",
-      "class": ["CS-MSc"]
+      "class": ["CS-MSC"]
     },
     {
       "code": "CSCM12",
       "title": "Software Concepts and Efficiency",
       "channel": "cscm12-software-concepts-and-efficiency",
       "type": "text",
-      "class": ["CS-MSc"]
+      "class": ["CS-MSC"]
     },
     {
       "code": "CS-M20",
       "title": "MSc Project",
       "channel": "cs-m20-msc-project",
       "type": "text",
-      "class": ["CS-MSc"]
+      "class": ["CS-MSC"]
     }
   ]
 }
